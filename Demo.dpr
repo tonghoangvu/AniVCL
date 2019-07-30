@@ -10,6 +10,7 @@ uses
 {$R *.res}
 
 begin
+  ReportMemoryLeaksOnShutDown := True;
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TformAnimation, formAnimation);
